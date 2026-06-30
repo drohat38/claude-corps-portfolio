@@ -1,0 +1,26 @@
+# This is a no-build static site (plain HTML/CSS/JS). The entries below mostly
+# guard against accidental commits of local cruft and secrets, not build output.
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Environment files and secrets — never commit these to a public repo
+.env
+.env.*
+*.local
+
+# Dependency / build directories (none today; reserved if tooling is added later)
+node_modules/
+dist/
