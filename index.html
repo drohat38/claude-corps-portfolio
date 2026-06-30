@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deven Rohatgi — AI-Assisted Nonprofit Systems Portfolio</title>
+  <meta name="description" content="Deven Rohatgi's Claude Corps portfolio: AI-assisted tools for Feed The City / Tango Charities — volunteer discovery, distribution logistics, and leader reporting." />
+  <meta name="color-scheme" content="light" />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:title" content="Deven Rohatgi — AI-Assisted Nonprofit Systems Portfolio" />
+  <meta property="og:description" content="Practical tools for Feed The City / Tango Charities: volunteer discovery, distribution logistics, and leader reporting." />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#projects">Skip to projects</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <span class="brand">Deven Rohatgi</span>
+      <nav class="nav" aria-label="Primary">
+        <a href="#projects">Projects</a>
+        <a href="#ai">How I used AI</a>
+        <a href="#claude-corps">Claude Corps</a>
+        <a class="nav-cta" href="https://github.com/drohat38" target="_blank" rel="noopener">GitHub ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap">
+        <p class="eyebrow">AI-Assisted Nonprofit Systems · Claude Corps Portfolio</p>
+        <h1>Deven Rohatgi — AI-Assisted Nonprofit Systems Portfolio</h1>
+        <p class="subtitle">
+          Building practical tools for Feed The City / Tango Charities to improve
+          volunteer discovery, distribution logistics, and leader reporting.
+        </p>
+
+        <ul class="stat-row" aria-label="Feed The City Denton at a glance">
+          <li><strong>7,963</strong><span>meals packed</span></li>
+          <li><strong>8</strong><span>events organized</span></li>
+          <li><strong>Founder</strong><span>Feed The City Denton</span></li>
+        </ul>
+
+        <p class="intro">
+          I began as the founder and lead organizer of Feed The City Denton, where I
+          scaled a monthly volunteer meal-packing event to 7,963 meals across 8 events.
+          As the event grew, I became more interested in the systems behind the service:
+          how volunteers find events, how leaders manage logistics, how partner
+          organizations confirm capacity, and how national leadership keeps data
+          accurate. My work focuses on using AI-assisted development to turn nonprofit
+          friction into maintainable infrastructure.
+        </p>
+
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="https://feed-the-city-event-map.pages.dev/" target="_blank" rel="noopener">View the live map ↗</a>
+          <a class="btn btn-ghost" href="#projects">See the projects</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CLAUDE CORPS -->
+    <section class="band" id="claude-corps">
+      <div class="wrap">
+        <h2>Why this fits Claude Corps</h2>
+        <p class="lead">
+          Claude Corps is about helping mission-driven organizations use AI and
+          technology in practical, durable ways. My projects show the same pattern:
+          start from a real nonprofit workflow problem, build a lightweight tool,
+          validate it with the people who would use it, and think about handoff so the
+          system can survive beyond the original builder.
+        </p>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Featured projects</h2>
+          <p class="muted">Three tools built from real Feed The City workflow problems.</p>
+        </div>
+
+        <div class="card-grid">
+
+          <!-- PROJECT 1 -->
+          <article class="card">
+            <div class="card-top">
+              <span class="badge badge-live">Complete · Live</span>
+              <span class="card-num">01</span>
+            </div>
+            <h3>Feed The City Event Map</h3>
+            <p class="card-desc">
+              The Feed The City Event Map helps volunteers find nearby Feed The City
+              meal-packing events and click through to official Tango Charities
+              registration pages. I built it after realizing that the national Feed The
+              City page listed city links in static columns, forcing volunteers to
+              manually click through each page to find time, location, cadence, and
+              registration details.
+            </p>
+
+            <h4>Problem</h4>
+            <p>
+              Volunteers needed a faster way to discover nearby events without clicking
+              through dozens of city pages.
+            </p>
+
+            <h4>What I built</h4>
+            <ul class="feature-list">
+              <li>Searchable public map (city, ZIP, or address search)</li>
+              <li>Filters by state, Saturday cycle, and event time</li>
+              <li>Google Maps pins colored by Saturday cycle, ranked by distance</li>
+              <li>Google Sheets-backed event database (published CSV)</li>
+              <li>Apps Script admin workflow for nontechnical maintenance</li>
+              <li>Weekly source-site change sentinel that watches the Tango page</li>
+              <li>Cloudflare Pages deployment (auto-deploys on push)</li>
+              <li>Sign-up links straight to official Tango city pages</li>
+            </ul>
+
+            <h4>What I learned</h4>
+            <p>
+              This project taught me that nonprofit technology has to work for multiple
+              users at once: volunteers on phones, leaders managing events, and staff
+              maintaining data after the original builder steps away.
+            </p>
+
+            <div class="card-links">
+              <a class="btn btn-small btn-primary" href="https://feed-the-city-event-map.pages.dev/" target="_blank" rel="noopener">Live site ↗</a>
+              <a class="btn btn-small btn-ghost" href="https://github.com/drohat38/feed-the-city-event-map" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </article>
+
+          <!-- PROJECT 2 -->
+          <article class="card">
+            <div class="card-top">
+              <span class="badge badge-progress">In Progress</span>
+              <span class="card-num">02</span>
+            </div>
+            <h3>FTC Distribution Tool</h3>
+            <p class="card-desc">
+              The FTC Distribution Tool is an internal-operations planning concept for
+              matching Feed The City events with partner organizations that can receive
+              meals. It came from a real problem I experienced in Denton: when an event
+              produces more meals than one partner can accept, leaders need a structured
+              way to identify backup partners, confirm capacity, and prevent food from
+              going to waste.
+            </p>
+
+            <h4>Problem</h4>
+            <p>
+              Volunteer enthusiasm can create operational pressure if meal volume exceeds
+              partner capacity. Leaders need a system for capacity, backups, and
+              accountability.
+            </p>
+
+            <h4>What I am building</h4>
+            <ul class="feature-list">
+              <li>Partner and event records, linked by a stable event ID</li>
+              <li>Event-to-partner assignment</li>
+              <li>Capacity confirmation workflow before events</li>
+              <li>Leader reminders on a recurring cycle</li>
+              <li><span class="tag-planned">Planned</span> backup partner discovery</li>
+              <li><span class="tag-planned">Planned</span> food-safety / refrigeration capacity fields</li>
+              <li><span class="tag-planned">Planned</span> clear public/private data boundary</li>
+            </ul>
+
+            <p class="note">
+              <strong>Public-safe note:</strong> this public repository should contain
+              only prototype, architecture, or sanitized example data. Real partner
+              contact information, meal capacity details, agreements, and operational
+              records should remain private.
+            </p>
+
+            <div class="card-links">
+              <a class="btn btn-small btn-ghost" href="https://github.com/drohat38/ftc-distribution-tool" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </article>
+
+          <!-- PROJECT 3 -->
+          <article class="card">
+            <div class="card-top">
+              <span class="badge badge-proto">Prototype · Active Development</span>
+              <span class="card-num">03</span>
+            </div>
+            <h3>Feed The City Volunteer Experience Platform</h3>
+            <p class="card-desc">
+              The Volunteer Experience Platform is my active work to improve how
+              volunteers and leaders interact with Feed The City. The current
+              volunteer-planner prototype helps volunteers turn a sandwich goal into an
+              ingredient plan and shopping-list style output, then connect that planning
+              experience to registration.
+            </p>
+
+            <h4>Problem</h4>
+            <p>
+              Static "what to bring" instructions are hard for volunteers to translate
+              into an actual shopping plan.
+            </p>
+
+            <h4>What I built / am building</h4>
+            <ul class="feature-list">
+              <li>Sandwich-goal input</li>
+              <li>Ingredient quantity calculator</li>
+              <li>Receipt / shopping-list style output</li>
+              <li>City sign-up / registration flow</li>
+              <li>Wix iframe integration (per-city via URL parameter)</li>
+              <li><span class="tag-planned">Planned</span> leader check-in &amp; attendance</li>
+              <li><span class="tag-planned">Planned</span> meal reporting &amp; Eventbrite gap-fixing</li>
+              <li><span class="tag-planned">Planned</span> service-hour verification</li>
+            </ul>
+
+            <p class="note">
+              Built with React + Vite and deployed on Vercel as a prototype. The broader
+              volunteer/leader system is active development, not a finished product.
+            </p>
+
+            <div class="card-links">
+              <a class="btn btn-small btn-ghost" href="https://github.com/drohat38/WhatToBringFTC" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- EARLIER PROTOTYPES -->
+        <div class="earlier">
+          <h3>Earlier prototypes</h3>
+          <p class="muted">
+            Steps along the way, kept honest as earlier experiments rather than featured
+            work:
+            <a href="https://github.com/drohat38/what-to-bring-list" target="_blank" rel="noopener">what-to-bring-list</a>,
+            <a href="https://github.com/drohat38/FeedTheCityPlanner" target="_blank" rel="noopener">FeedTheCityPlanner</a>,
+            and two earlier interactive geo-map experiments
+            (<a href="https://github.com/drohat38/South-Asian" target="_blank" rel="noopener">South-Asian</a>,
+            <a href="https://github.com/drohat38/South-Asian-Map" target="_blank" rel="noopener">South-Asian-Map</a>).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW I USED AI -->
+    <section class="band band-ai" id="ai">
+      <div class="wrap">
+        <h2>How I used AI</h2>
+        <p class="lead">
+          I used Claude and Claude Code to accelerate prototyping, debugging,
+          architecture exploration, documentation, and iteration. I did not treat AI as
+          a replacement for understanding the nonprofit problem. I owned the product
+          direction, user needs, data validation, stakeholder feedback, deployment
+          decisions, and handoff planning.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" id="contact">
+    <div class="wrap footer-inner">
+      <div>
+        <p class="footer-name">Deven Rohatgi</p>
+        <p class="muted">AI-assisted nonprofit systems · Feed The City / Tango Charities</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="https://github.com/drohat38" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://feed-the-city-event-map.pages.dev/" target="_blank" rel="noopener">Live map</a></li>
+        <li><a href="mailto:deven.rohatgi@gmail.com">deven.rohatgi@gmail.com</a></li>
+      </ul>
+    </div>
+    <p class="footer-fine muted">
+      &copy; <span id="year">2026</span> Deven Rohatgi. Built with AI-assisted development.
+      Public-safe: no private partner, volunteer, or contact data.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
