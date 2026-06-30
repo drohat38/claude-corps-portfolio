@@ -53,10 +53,10 @@ Features of this portfolio site (not the projects it links to):
 - Single page, mobile-first responsive layout.
 - Accessible basics: skip link, semantic landmarks, ARIA labels, and a
   `prefers-reduced-motion` fallback.
-- Status badges per project: `badge-live` (green), `badge-progress` (amber), and
-  `badge-proto` (blue).
-- Open Graph / social-preview tags and a self-contained inline SVG favicon
-  (no external requests).
+- Status indicators per project: `is-live` (green), `is-progress` (amber), and
+  `is-proto` (blue) dots.
+- Self-hosted Fraunces (display) + Inter (text) web fonts — no third-party requests.
+- Open Graph / social-preview tags and a self-contained inline SVG favicon.
 - One small script that keeps the footer year current. No analytics, no
   trackers, no third-party requests.
 
@@ -65,6 +65,8 @@ Features of this portfolio site (not the projects it links to):
 - **HTML5** — semantic, single page (`index.html`).
 - **CSS3** — custom properties, flexbox/grid, mobile-first; no framework
   (`styles.css`).
+- **Typography** — self-hosted Fraunces (display serif) + Inter (text) via
+  `@font-face` (`assets/fonts/`).
 - **Vanilla JavaScript** — one tiny progressive-enhancement script
   (`script.js`).
 - **No build step, no dependencies, no package manager.**
@@ -105,6 +107,7 @@ alongside it.
 |------|---------|
 | `index.html` | The single-page portfolio. |
 | `styles.css` | Styling — mobile-first, no framework. |
+| `assets/fonts/` | Self-hosted Fraunces + Inter web fonts (woff2). |
 | `script.js` | Tiny enhancement that keeps the footer year current. No tracking. |
 | `README.md` | This file. |
 | `PUBLIC_AUDIT.md` | Privacy/security audit of every linked repo. |
@@ -122,8 +125,8 @@ All links are plain `<a href="…">` tags in `index.html`. To change one:
    [`APPLICATION_LINKS.md`](./APPLICATION_LINKS.md) — update those too so they
    stay in sync.
 
-Status badges live in `index.html` as `badge-live`, `badge-progress`, and
-`badge-proto`. Change the class on a card to change its badge.
+Status indicators live in `index.html` as `is-live`, `is-progress`, and
+`is-proto` on each project's `.status` element. Change the class to change the dot.
 
 ## Public-safe (this is a public repo)
 
